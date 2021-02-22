@@ -322,3 +322,9 @@ git config --list
 
 
 exit
+
+
+
+
+#### Linking Git/GitHub and RStudio ####
+
