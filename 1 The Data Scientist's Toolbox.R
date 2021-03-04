@@ -213,7 +213,7 @@ version
 # updated version of each file, with a record of all previous versions AND a 
 # record of exactly what changed between the versions.
 
-# the next major benefit of version control: It keeps a record of all changes 
+# The next major benefit of version control: It keeps a record of all changes 
 # made to the files. This can be of great help when you are collaborating with 
 # many people on the same files - the version control software keeps track of who, 
 # when, and why those specific changes were made. 
@@ -232,6 +232,8 @@ version
 # the changes made. You can sort of think of it as being similar to DropBox.
 # GitHub has the added benefit of interfacing with Git to keep track of all of 
 # your file versions and changes.
+
+# Concepts Frequently Used:
 
 # Repository: Equivalent to the project’s folder/directory - all of your version 
 # controlled files (and the recorded changes) are located in a repository. 
@@ -327,6 +329,122 @@ exit
 
 
 #### Linking Git/GitHub and RStudio ####
+
+
+
+
+# In RStudio, go to Tools > Global Options > Git/SVN
+# Confirm that git.exe resides in the directory that RStudio has specified; 
+# if not, change the directory to the correct path. Otherwise, click Apply.
+# RStudio and Git are now linked.
+
+# In that same RStudio option window, click “Create RSA Key” and when this 
+# completes, click “Close.”
+# Following this, in that same window again, click “View public key” and 
+# copy the string of numbers and letters. Close this window.
+
+# You have now created a key that is specific to you which we will provide 
+# to GitHub, so that it knows who you are when you commit a change from 
+# within RStudio.
+# To do so, go to github.com/, log-in if you are not already, and go to your 
+# account settings. There, go to “SSH and GPG keys” and click “New SSH key”. 
+# Paste in the public key you have copied from RStudio into the Key box and 
+# give it a Title related to RStudio. Confirm the addition of the key with 
+# your GitHub password.
+
+# GitHub and RStudio are now linked. From here, we can create a repository 
+# on GitHub and link to RStudio.
+
+# On GitHub, create a new repository 
+# (github.com > Your Profile > Repositories > New). Name your new repository 
+# and give it a short description. Click Create repository. Copy the URL for 
+# your new repository.
+
+# In RStudio, go to File > New Project. Select Version Control. Select Git as 
+# your version control software. Paste in the repository URL from before, 
+# select the location where you would like the project stored. When done, 
+# click on “Create Project”. Doing so will initialize a new project, linked 
+# to the GitHub repository, and open a new session of RStudio.
+
+# Create a new R script (File > New File > R Script)
+# Save the file. Note that when you do so, the default location for the file 
+# is within the new Project directory you created earlier.
+
+# Once that is done, looking back at RStudio, in the Git tab of the environment 
+# quadrant, you should see your file you just created! Click the checkbox under 
+# “Staged” to stage your file.
+
+# Click “Commit”. A new window should open, that lists all of the changed files 
+# from earlier, and below that shows the differences in the staged files from 
+# previous versions. In the upper quadrant, in the “Commit message” box, write 
+# yourself a commit message. Click Commit.
+
+# So far, you have created a file, saved it, staged it, and committed it. If you 
+# remember your version control lecture, the next step is to push your changes 
+# to your online repository. Push your changes to the GitHub repository.
+
+# Go to your GitHub repository and see that the commit has been recorded.
+
+
+
+
+#### Projects Under Version Control ####
+
+
+
+
+#  what if you already have an R Project that you’ve been working on, but don’t 
+# have it linked up to any version control software (tut tut!)?
+#  Let’s fix that. First, let’s set it up to interact with Git. Open Git Bash or 
+# Terminal and navigate to the directory containing your project files. Move 
+# around directories by typing cd ~/dir/name/of/path/to/file
+
+
+cd ~/dir/name/of/path/to/file
+
+
+# When the command prompt in the line before the dollar sign says the correct 
+# directory location of your project, you are in the correct location. Once here, 
+# type git init followed by git add . - this initializes (init) this directory 
+# as a git repository and adds all of the files in the directory (.) to your 
+# local repository. Commit these changes to the git repository using 
+# git commit -m "Initial commit"
+
+
+git init
+git add .
+git commit -m "Initial commit"
+
+
+# At this point, we have created an R Project and have now linked it to Git 
+# version control. The next step is to link this with GitHub.
+# To do this, go to GitHub.com, and again, create a new repository:
+# 1) Make sure the name is the exact same as your R project;
+# 2) Do NOT initialize a README file, .gitignore, or license.
+
+# You should see that there is an option to “Push an existing repository from 
+# the command line” with instructions below containing code on how to do so. 
+# In Git Bash or Terminal, copy and paste these lines of code to link your 
+# repository with GitHub. After doing so, refresh your GitHub page.
+
+# When you re-open your project in RStudio, you should now have access to the 
+# Git tab in the upper right quadrant and can push to GitHub from within 
+# RStudio any future changes.
+
+# If there is an existing project that others are working on that you are asked 
+# to contribute to, you can link the existing project with your RStudio. It 
+# follows the exact same premise as that from the last lesson where you 
+# created a GitHub repository and then cloned it to your local computer using 
+# RStudio. In brief, in RStudio, go to File > New Project > Version Control. 
+# Select Git as your version control system, and like in the last lesson, 
+# provide the URL to the repository that you are attempting to clone and select 
+# a location on your computer to store the files locally. Create the project.
+
+# The only difference from the last lesson is that you did not create the 
+# original repository, instead you cloned somebody else’s.
+
+
+
 
 
 
