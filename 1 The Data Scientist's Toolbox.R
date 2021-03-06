@@ -447,5 +447,95 @@ git commit -m "Initial commit"
 
 
 
+#### R-Markdown ####
 
+
+
+
+# R Markdown is a way of creating fully reproducible documents, in which both 
+# text and code can be combined. Despite these documents all starting as plain 
+# text, you can render them into HTML pages, or PDFs, or Word documents, or 
+# slides! The symbols you use to signal, for example, bold or italics is 
+# compatible with all of those formats.
+
+# One of the main benefits is the reproducibility of using R Markdown. Since 
+# you can easily combine text and code chunks in one document, you can easily 
+# integrate introductions, hypotheses, your code that you are running, the 
+# results of that code and your conclusions all in one document. Sharing what 
+# you did, why you did it and how it turned out becomes so simple - and that 
+# person you share it with can re-run your code and get the exact same answers 
+# you got. That’s what we mean about reproducibility. But also, sometimes you 
+# will be working on a project that takes many weeks to complete; you want to 
+# be able to see what you did a long time ago (and perhaps be reminded exactly 
+# why you were doing this) and you can see exactly what you ran AND the results 
+# of that code - and R Markdown documents allow you to do that.
+
+# Another major benefit to R Markdown is that since it is plain text, it works 
+# very well with version control systems. It is easy to track what character 
+# changes occur between commits; unlike other formats that aren’t plain text.
+
+# Like everything in R, this extended functionality comes from an R package - 
+# “rmarkdown.” All you need to do to install it is run:
+
+install.packages("rmarkdown")
+
+# To create an R Markdown document, in R Studio, go to 
+# File > New File > R Markdown. 
+
+# There are three main sections of an R Markdown document. 
+# The first is the HEADER at the top, bounded by the three dashes. This is 
+# where you can specify details like the title, your name, the date, and what 
+# kind of document you want output. If you filled in the blanks in the window 
+# earlier, these should be filled out for you. Also on this page, you can see 
+# TEXT SECTIONS.
+
+# And finally, you will see code chunks. These are bounded by the triple 
+# backticks. These are pieces of R code (“chunks”) that you can run right from 
+# within your document - and the output of this code will be included in the 
+# PDF when you create it.
+
+# The easiest way to see how each of these sections behave is to produce the PDF!
+
+# When you are done with a document, in R Markdown, you are said to “knit” your 
+# plain text and code into your final document. To do so, click on the “Knit” 
+# button along the top of the source panel. When you do so, it will prompt you 
+# to save the document as an RMD file.
+
+# One of the huge benefits of R Markdown - rendering the results to code inline.
+
+# What are some easy Markdown commands?
+# To bold text, you surround it by two asterisks on either side. Similarly, to 
+# italicise text, you surround the word with a single asterisk on either side. 
+# **bold** and *italics* respectively.
+
+
+# You can make section headers. To do this, you put a series of hash marks (#). 
+# The number of hash marks determines what level of heading it is. One hash is 
+# the highest level and will make the largest text, two hashes is the next 
+# highest level and so on.
+
+# Header level 1
+## Header level 2
+### Header level 3...
+
+# To make an R code chunk, you can type the three backticks, followed by the 
+# curly brackets surrounding a lower case R, put your code on a new line and 
+# end the chunk with three more backticks. Thankfully, RStudio recognized you’d 
+# be doing this a lot and there are short cuts, namely Ctrl+Alt+I (Windows) or 
+# Cmd + Option + I (Mac). Additionally, along the top of the source quadrant, 
+# there is the “Insert” button, that will also produce an empty code chunk.
+
+# If you aren’t ready to knit your document yet, but want to see the output of 
+# your code, select the line of code you want to run and use Ctrl+Enter or hit 
+# the “Run” button along the top of your source window. The text “Hello world” 
+# should be output in your console window. If you have multiple lines of code 
+# in a chunk and you want to run them all in one go, you can run the entire 
+# chunk by using Ctrl+Shift+Enter OR hitting the green arrow button on the 
+# right side of the chunk OR going to the Run menu and selecting Run current 
+# chunk.
+
+# Lists are easily created by preceding each prospective bullet point by a 
+# single dash, followed by a space. Importantly, at the end of each bullet’s 
+# line, end with TWO spaces. This is a quirk of R Markdown that will cause 
+# spacing problems if not included.
 
