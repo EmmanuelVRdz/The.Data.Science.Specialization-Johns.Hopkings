@@ -539,3 +539,35 @@ install.packages("rmarkdown")
 # line, end with TWO spaces. This is a quirk of R Markdown that will cause 
 # spacing problems if not included.
 
+
+
+
+
+#### Types of Data Science Questions ####
+
+
+
+# There are, broadly speaking, six categories in which data analyses fall. In 
+# the approximate order of difficulty, they are: 1, Descriptive; 2. Exploratory
+# 3. Inferential; 4. Predictive; 5. Causal; 6. Mechanistic
+
+# 1, Descriptive Analysis
+
+# The goal is to describe or summarize a set of data. Whenever you get a new 
+# dataset to examine, this is usually the first kind of analysis you will 
+# perform. Descriptive analysis will generate simple summaries about the 
+# samples and their measurements. You may be familiar with common descriptive 
+# statistics: measures of central tendency (eg: mean, median, mode) or 
+# measures of variability (eg: range, standard deviations or variance).
+
+# This type of analysis is aimed at summarizing your sample – not for 
+# generalizing the results of the analysis to a larger population or trying 
+# to make conclusions. Description of data is separated from making 
+# interpretations; generalizations and interpretations require additional 
+# statistical steps.
+
+# 2. Exploratory Analysis
+# 
+
+
+
