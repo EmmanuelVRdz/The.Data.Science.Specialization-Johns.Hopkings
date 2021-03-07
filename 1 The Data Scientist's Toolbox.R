@@ -567,7 +567,18 @@ install.packages("rmarkdown")
 # statistical steps.
 
 # 2. Exploratory Analysis
-# 
+# The goal of exploratory analysis is to examine or explore the data and find 
+# relationships that weren’t previously known. Exploratory analyses explore 
+# how different measures might be related to each other but do not confirm 
+# that relationship as causitive. “Correlation does not imply causation”
+
+# rather than just summarizing the data points within a single variable, we 
+# can look at how two or more variables might be related to each other. 
+# All exploratory analysis can tell us is that a relationship exists, not 
+# the cause.
+
+# 3. Inferential analysis
+
 
 
 
