@@ -547,6 +547,7 @@ install.packages("rmarkdown")
 
 
 
+
 # There are, broadly speaking, six categories in which data analyses fall. In 
 # the approximate order of difficulty, they are: 1, Descriptive; 2. Exploratory
 # 3. Inferential; 4. Predictive; 5. Causal; 6. Mechanistic
@@ -566,7 +567,10 @@ install.packages("rmarkdown")
 # interpretations; generalizations and interpretations require additional 
 # statistical steps.
 
+
+
 # 2. Exploratory Analysis
+
 # The goal of exploratory analysis is to examine or explore the data and find 
 # relationships that weren’t previously known. Exploratory analyses explore 
 # how different measures might be related to each other but do not confirm 
@@ -577,7 +581,78 @@ install.packages("rmarkdown")
 # All exploratory analysis can tell us is that a relationship exists, not 
 # the cause.
 
+
+
 # 3. Inferential analysis
+
+# The goal of inferential analyses is to use a relatively small sample of data 
+# to infer or say something about the population at large. Inferential 
+# analysis is commonly the goal of statistical modelling, where you have a 
+# small amount of information to extrapolate and generalize that information 
+# to a larger group.
+
+# Inferential analysis typically involves using the data you have to estimate 
+# that value in the population and then give a measure of your uncertainty 
+# about your estimate. Since you are moving from a small amount of data and 
+# trying to generalize to a larger population, your ability to accurately 
+# infer information about the larger population depends heavily on your 
+# sampling scheme - if the data you collect is not from a representative 
+# sample of the population, the generalizations you infer won’t be accurate 
+# for the population.
+
+
+
+# 4. Predictive analysis
+
+# The goal of predictive analysis is to use current data to make predictions
+# about future data. Essentially, you are using current and historical data
+# to find patterns and predict the likehood of future outcomes.
+
+# Like in inferential analysis, your accuracy in predictions is dependent on 
+# measuring the right variables.  there are many ways to build up prediction 
+# models with some being better or worse for specific cases, but in general, 
+# having more data and a simple model generally performs well at predicting 
+# future outcomes.
+
+
+
+# 5. Causal analysis
+
+# The goal of causal analysis is to see what happens to one variable when we 
+# manipulate another variable - looking at the cause and effect of a 
+# relationship.
+
+#  Causal analysis is often considered the gold standard in data analysis, 
+# and is seen frequently in scientific studies where scientists are trying 
+# to identify the cause of a phenomenon, but often getting appropriate data 
+# for doing a causal analysis is a challenge.
+
+# One thing to note about causal analysis is that the data is usually 
+# analysed in aggregate and observed relationships are usually average 
+# effects; so, while on average giving a certain population a drug may 
+# alleviate the symptoms of a disease, this causal relationship may not hold 
+# true for every single affected individual.
+
+
+
+# 6. Mechanistic analysis
+
+# Mechanistic analysis are not as commonly used as the previous analysises.
+# The goal of mechanistic analysis is to understand the EXACT CHANGES IN 
+# VARIABLES that lead to EXACT CHANGES IN OTHER VARIABLES. These analyses 
+# are exceedingly hard to use to infer much, except in simple situations or 
+# in those that are nicely modeled by deterministic equations. Given this 
+# description, it might be clear to see how mechanistic analyses are most 
+# commonly applied to physical or engineering sciences; biological sciences, 
+# for example, are far too noisy of data sets to use mechanistic analysis. 
+# Often, when these analyses are applied, the only noise in the data is 
+# measurement error, which can be accounted for.
+
+
+
+
+
+#### Experimental Design ####
 
 
 
