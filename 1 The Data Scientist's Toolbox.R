@@ -539,6 +539,10 @@ install.packages("rmarkdown")
 # line, end with TWO spaces. This is a quirk of R Markdown that will cause 
 # spacing problems if not included.
 
+# Embedded links are added with the next structure: 
+# [text that is shown](link.com)
+
+
 
 
 
@@ -551,6 +555,7 @@ install.packages("rmarkdown")
 # There are, broadly speaking, six categories in which data analyses fall. In 
 # the approximate order of difficulty, they are: 1, Descriptive; 2. Exploratory
 # 3. Inferential; 4. Predictive; 5. Causal; 6. Mechanistic
+
 
 # 1, Descriptive Analysis
 
@@ -653,6 +658,171 @@ install.packages("rmarkdown")
 
 
 #### Experimental Design ####
+
+
+
+# As a data scientist, you are a scientist and as such, need to have the 
+# ability to design proper experiments to best answer your data science 
+# questions!
+
+# What does experimental design mean?
+# Experimental design is organizing an experiment so that you have the 
+# correct data (and enough of it!) to clearly and effectively answer your 
+# data science question. This process involves clearly formulating your 
+# question in advance of any data collection, designing the best set-up 
+# possible to gather the data to answer your question, identifying problems 
+# or sources of error in your design, and only then, collecting the 
+# appropriate data.
+
+# Why should you care?
+# Going into an analysis, you need to have a plan in advance of what you are 
+# going to do and how you are going to analyse the data. If you do the wrong 
+# analysis, you can come to the wrong conclusions!
+
+# There’s an entire website, Retraction Watch, dedicated to identifying papers 
+# that have been retracted, or removed from the literature, as a result of poor 
+# scientific practices. And sometimes, those poor practices are a result of 
+# poor experimental design and analysis.
+
+# Occasionally, these erroneous conclusions can have sweeping effects; 
+# particularly in the field of human health. 
+
+# Principles of experimental design
+# There are a lot of concepts and terms inherent to experimental design. Let’s 
+# go over some of these now! Concepts:
+
+# Independent variable (AKA factor): The variable that the experimenter
+# manipulates; it does not depend on other variables being measured. Often 
+# displayed on the x-axis
+
+# Dependent variable: The variable that is expected to change as a result of
+# changes in the independent variable. Often displayed on the y-axis, so that
+# the changes in X, the independent variable, effect changes in Y.
+
+# SO when you are designing an experiment, you have to decide what variables
+# you will measure, and which you will manipulate to effect changes in the
+# other measured variables. 
+# Hypothesis: what is the expected outcome of your experiment? Additionally, 
+# you must develop your HYPOTHESIS, essentially an educated guess as to the 
+# relationship between your variables and the outcome of your experiment.
+
+# Sample size is the number of experimental subjects you will include in your 
+# experiment.
+
+# Confounder: An extraneous variable that may affect the relationship between 
+# the dependent and independent variables. Before I collect my data though, I 
+# need to consider if there are problems with this experiment that might cause 
+# an erroneous result. In this case, my experiment may be fatally flawed by a 
+# confounder.
+
+# Control: measure the extraneous variables that might affect the relationship
+# between the dependent and independent variables assigned by us, so that we 
+# can take into account the effects of this variable on the change of the 
+# dependent variable.
+
+# Fix: another way of control. To consider individuals at the same situation so 
+# that we remove the posiible effect of the counfunder on the changes of our 
+# dependent variable.
+
+# Control group: This is when you have a group of experimental subjects that are 
+# not manipulated. So if you were studying the effect of a drug on survival, you 
+# would have a group that received the drug (treatment) and a group that did not 
+# (control). This way, you can compare the effects of the drug in the treatment 
+# versus control group. A control group is a group of subjects that do not 
+# receive the treatment, but still have their dependent variables measured.
+
+# Blind: we can blind the subjects to their assigned treatment group. Sometimes, 
+# when a subject knows that they are in the treatment group (eg: receiving the 
+# experimental drug), they can feel better, not from the drug itself, but from 
+# knowing they are receiving treatment. This is known as the placebo effect. 
+# To combat this, often participants are blinded to the treatment group they are 
+# in; this is usually achieved by giving the control group a mock treatment 
+# (eg: given a sugar pill they are told is the drug). In this way, if the placebo 
+# effect is causing a problem with your experiment, both groups should experience 
+# it equally.
+
+# Randomization: randomly assign individuals to each of your groups. This means
+# that any potential confounding variables should be distributed between each 
+# group roughly equally, to help eliminate/reduce systematic errors. Generally, 
+# we don’t know what will be a confounder beforehand; to help lessen the risk of 
+# accidentally biasing one group to be enriched for a confounder, you can do a 
+# randomization.
+
+# Replication:  repeating an experiment with different experimental subjects. A 
+# single experiment’s results may have occured by chance; a confounder was 
+# unevenly distributed across your groups, there was a systematic error in the 
+# data collection, there were some outliers, etc. However, if you can repeat the 
+# experiment and collect a whole new set of data and still come to the same 
+# conclusion, your study is much stronger. Also at the heart of replication is 
+# that it allows you to measure the variability of your data more accurately, 
+# which allows you to better assess whether any differences you see in your data 
+# are significant. Replication studies are a great way to bolster your 
+# experimental results and get measures of variability in your data.
+
+## Sharing Data
+
+# Onve you've collected and analysed your data, one of the next steps of being a
+# citizen scientist is to share your data and code for analyses. GitHub is a great
+# place to share your code!
+
+## Beware p-hacking
+
+# One of the many things often reported in experiments is a value called the p-value. 
+# This is a value that tells you the probability that the results of your experiment 
+# were observed by chance. This is a very important concept in statistics.
+
+# What you need to look out for is when you manipulate p-values towards your own end. 
+# Often, when your p-value is less than 0.05 (in other words, there is a 5 percent 
+# chance that the differences you saw were observed by chance), a result is considered 
+# significant. But if you do 20 tests, by chance, you would expect one of the twenty 
+# (5%) to be significant. In the age of big data, testing twenty hypotheses is a very 
+# easy proposition. And this is where the term p-hacking comes from: This is when you 
+# exhaustively search a data set to find patterns and correlations that appear 
+# statistically significant by virtue of the sheer number of tests you have performed. 
+# These spurious correlations can be reported as significant and if you perform enough 
+# tests, you can find a data set and analysis that will show you what you wanted to see.
+ "cuando el modelo no es representativo los casos particulares no lo serán"
+
+
+
+
+#### Big Data ####
+
+
+
+# As the name suggests, big data are very large data sets. Three qualities that are 
+# commonly attributed to big data sets: Volume, Velocity, Variety. From these three 
+# adjectives, we can see that big data involves large data sets of diverse data types 
+# that are being generated very rapidly.
+
+# One of the main shifts in data science has been moving from structured data sets to 
+# tackling unstructured data.
+
+## What is structured data? What is unstructured data?
+# Structured data is what you traditionally might think of data; long tables, 
+# spreadsheets, or databases with columns and rows of information that you can sum or 
+# average or analyse however you like within those confines. Unfortunately, this is 
+# rarely how data is presented to you in this day and age. The data sets we commonly 
+# encounter are much messier, and it is our job to extract the information we want and 
+# corral it into something tidy and structured.
+
+# Given the variety of data types and sources, very rarely is the data stored in a neat, 
+# ordered spreadsheet, that traditional methods for cleaning and analysis can be applied to!
+
+# Big data helps answer what, not why, and often that’s good enough.
+
+# Big data has now made it possible to collect vast amounts of data, very rapidly, from a 
+# variety of sources (and improvements in technology have made it cheaper to collect, 
+# store and analyse) - but the question remains, how much of this data explosion is useful 
+# for answering questions you care about?
+
+# Regardless of the size of the data, you need the right data to answer a question.
+# Essentially, any given data set may not be suited for your question, even if you really 
+# wanted it to; and big data does not fix this. Even the largest data sets around might not 
+# be big enough to be able to answer your question if it’s not the right data.
+
+# Data science is question driven science and even the largest of data sets may not be 
+# appropriate for your case.
 
 
 
